@@ -1,3 +1,7 @@
+:root {
+    --dark:#2d3845;
+    --light:#79e0ee;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,6 +16,7 @@ body {
     padding: 50px;
     background-color: #2d3845;
     color:#79e0ee;
+    margin-bottom: 2rem;
 }
 
 .header h1 {
@@ -25,6 +30,7 @@ body {
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
+    
 }
 .header nav ul {
     list-style-type: none;
@@ -33,9 +39,144 @@ body {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+
+    
+
+}
+.header nav ul li a:hover {
+color: orchid;
 }
 
 a {
     color: #79e0ee;
     text-decoration: none;
 }
+/*main {
+    display:flex;
+    
+}
+
+.column h2 {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+
+}
+*/
+.row p {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 12rem;
+    margin-left: 12rem;
+}
+.row header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
+    text-align: center;
+}
+
+
+.card {
+    display: block;
+    border-style: double;
+    border-width: 4px;
+    padding: 20px;
+    float: center;
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: var(--dark);
+    
+    
+}
+.card p {
+    text-align: center;
+    color: var(--light);
+}
+
+.card h2 {
+    text-align: center;
+    color: var(--light);
+}
+
+.card2 {
+    display: block;
+    border-style: double;
+    border-width: 4px;
+    padding: 20px;
+    float: center;
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
+    background-color: var(--dark);
+}
+.card2 p {
+    text-align: center;
+    color: var(--light);
+}
+.card2 h2 {
+    text-align: center;
+    color: var(--light);
+}
+
+.card3 {
+    display: block;
+    border-style: double;
+    border-width: 4px;
+    padding: 20px;
+    float: center;
+    width: 50%;
+    margin: 20px auto;
+    background-color: var(--dark);
+}
+.card3 p {
+    text-align: center;
+    color: var(--light);
+}
+.card3 h2 {
+    text-align: center;
+    color: var(--light);
+}
+/*.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: var(--dark);
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: var(--light);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    
+  }
+  
+
+
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end 3 ;
+  }
+  .item2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  } 
+
+@media screen and (max-width: 993px) {
+    header {
+        background:darkblue
+    }
+}
+
